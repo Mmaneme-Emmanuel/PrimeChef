@@ -1,0 +1,47 @@
+.header {
+    height: 40vw; /* Or a fixed height like 400px */
+    margin: 30px auto;
+    position: relative;
+    background: url('/header_img.png') no-repeat center center;
+    background-size: cover;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Correct alignment */
+    gap: 1.5vw;
+    max-width: 40%;
+    bottom: 10%;
+    left: 6vw;
+    color: white;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    font-size: max(4.5vw, 22px); /* Responsive font size */
+    color: white;
+    font-family: Arial, sans-serif; /* Specify a font family */
+}
+
+.header-contents p {
+    font-size: 1.2rem;
+    color: rgb(153, 20, 20);
+}
+
+.header-contents button {
+    border: none;
+    color: rgb(44, 44, 92);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    border-radius:50px;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    cursor: pointer;
+}
+
+.header-contents button :hover{
+    color: orangered;
+}

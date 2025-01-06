@@ -1,0 +1,103 @@
+/* Footer.css */
+.footer {
+  background-color: #333; /* Dark background for contrast */
+  color: #fff; /* Light text for readability */
+  padding: 40px 30px;
+  font-family: 'Arial', sans-serif;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space out the columns evenly */
+  flex-wrap: wrap; /* Ensure responsiveness */
+  gap: 20px;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1; /* Each section gets equal width */
+  min-width: 200px; /* Ensure sections don't collapse on smaller screens */
+}
+
+.footer-content-left img {
+  width: 150px; /* Logo size */
+  margin-bottom: 20px;
+}
+
+.footer-content-left p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.footer-social-icons img {
+  width: 30px; /* Icon size */
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.1); /* Subtle hover effect */
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-content-center ul li:hover,
+.footer-content-right ul li:hover {
+  color: #ff9800; /* Highlight color on hover */
+}
+
+.footer hr {
+  border: 0;
+  height: 1px;
+  background-color: #444; /* Subtle divider line */
+  margin: 20px 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #aaa; /* Subtle text color */
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    min-width: unset;
+  }
+}
+
